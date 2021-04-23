@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Graphic03SliderController">
+   <children>
+      <Pane fx:id="content" layoutX="6.0" layoutY="14.0" prefHeight="423.0" prefWidth="702.0" AnchorPane.bottomAnchor="-23.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="532.0" fitWidth="904.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pngtree-car-technology-particle-blue-image_17140.jpg" />
+               </image>
+            </ImageView>
+            <JFXHamburger fx:id="icon" layoutX="657.0" layoutY="14.0" />
+         </children></Pane>
+      <JFXDrawer fx:id="slider" defaultDrawerSize="160.0" layoutY="82.0" prefHeight="400.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

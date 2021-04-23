@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="slider" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="160.0" spacing="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="107.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/parc-auto2.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton accessibleText="Add" maxWidth="1.7976931348623157E308" prefHeight="50.0" ripplerFill="#09c337" text="Add">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Update" maxWidth="1.7976931348623157E308" prefHeight="50.0" ripplerFill="#f29408" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Delete" maxWidth="1.7976931348623157E308" prefHeight="50.0" ripplerFill="#ee0e0e" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Search" maxWidth="1.7976931348623157E308" prefHeight="50.0" ripplerFill="#ed11d9" text="Search">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Exit" maxWidth="1.7976931348623157E308" prefHeight="50.0" ripplerFill="#f2263e" text="Exit">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</VBox>

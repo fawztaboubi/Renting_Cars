@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CatalogController">
+   <children>
+      <ImageView fitHeight="421.0" fitWidth="647.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-21.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-47.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../image/nostalgic_blue_background_06_hd_pictures_169782.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="421.0" prefWidth="652.0">
+         <children>
+            <Button layoutX="500.0" layoutY="274.0" mnemonicParsing="false" onAction="#PreviousInterface" prefHeight="36.0" prefWidth="79.0" text="Go Back">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="414.0" layoutY="273.0" mnemonicParsing="false" onAction="#Add_Reservation" prefHeight="36.0" prefWidth="59.0" text="Rent">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="198.0" layoutY="29.0" text="Pick a nice ride" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="Bell MT Bold" size="30.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table_catalog" layoutX="14.0" layoutY="94.0" onMouseClicked="#getSelected" prefHeight="291.0" prefWidth="381.0">
+               <columns>
+                  <TableColumn fx:id="col_Plaque" prefWidth="75.0" text="Plaque" />
+                  <TableColumn fx:id="col_marque" prefWidth="75.0" text="Marque" />
+                  <TableColumn fx:id="col_modele" prefWidth="75.0" text="Modele" />
+                  <TableColumn fx:id="prix" prefWidth="75.0" text="Prix" />
+               </columns>
+            </TableView>
+            <TextField fx:id="filterField" layoutX="422.0" layoutY="337.0" prefHeight="26.0" prefWidth="149.0" promptText="search" />
+            <JFXDatePicker fx:id="date1" defaultColor="WHITE" layoutX="402.0" layoutY="105.0" promptText="start day" style="-fx-background-color: rgba(255, 255, 255,0.5);" />
+            <JFXDatePicker fx:id="date2" accessibleText="ggfgf" defaultColor="WHITE" layoutX="402.0" layoutY="160.0" promptText="Delivery date" style="-fx-background-color: rgba(255, 255, 255,0.5);" />
+            <JFXCheckBox fx:id="assurance" checkedColor="#ffa9a9" layoutX="432.0" layoutY="221.0" selected="true" text="Inssurance" textFill="WHITE" unCheckedColor="WHITE" />
+            <TextField fx:id="txt_plaque" layoutX="24.0" layoutY="34.0" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

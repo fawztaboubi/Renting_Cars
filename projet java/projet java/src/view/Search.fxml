@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="366.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchController">
+   <children>
+      <TableView fx:id="table_voiture" layoutX="194.0" layoutY="53.0" prefHeight="341.0" prefWidth="437.0">
+         <columns>
+            <TableColumn fx:id="col_plaque" prefWidth="75.0" text="Plaque" />
+            <TableColumn fx:id="col_marque" prefWidth="75.0" text="Marque" />
+            <TableColumn fx:id="col_modele" prefWidth="75.0" text="Modele" />
+            <TableColumn fx:id="col_tran" prefWidth="75.0" text="Etat" />
+            <TableColumn fx:id="col_prix" prefWidth="75.0" text="Prix" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="filterField" focusColor="#1eff00" layoutX="294.0" layoutY="14.0" promptText="Search" unFocusColor="RED" />
+      <JFXButton layoutX="653.0" layoutY="377.0" onAction="#quit" text="quit">
+         <graphic>
+            <ImageView fitHeight="17.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/img_356268.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
